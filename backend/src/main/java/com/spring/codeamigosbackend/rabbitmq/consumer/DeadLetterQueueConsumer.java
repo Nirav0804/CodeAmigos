@@ -28,8 +28,7 @@ public class DeadLetterQueueConsumer {
 
     private final MailService mailService;
 
-    private Dotenv dotenv = Dotenv.load() ;
-
+private static Dotenv dotenv = Dotenv.configure().ignoreIfMissing().load(); 
 
     private String supervisorEmails = dotenv.get("Supervisor_Emails") ;
 

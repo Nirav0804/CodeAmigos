@@ -13,8 +13,7 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 public class RabbitMqConfig {
-    private static final Dotenv dotenv = Dotenv.load();
-
+private static Dotenv dotenv = Dotenv.configure().ignoreIfMissing().load(); 
     @Bean
     public Queue rabbitMqQueue() {
         // Create the main queue with dead letter configuration
