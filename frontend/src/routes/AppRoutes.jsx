@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route, Navigate, } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route, Navigate, } from 'react-router-dom';
 import React, { useContext } from 'react';
 import App from '../App';
 import RegistrationForm from '../components/forms/RegistrationForm';
